@@ -1,4 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 @media only screen and (max-width: 768px) {
   .projects {
       flex-direction: column;
@@ -6,6 +6,11 @@
   .project {
       flex-basis: 100%;
   }
+}
+
+.novas {
+  margin-top: 40px;
+  text-align: center;
 }
 
 * {
@@ -99,27 +104,9 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 100; 
   }
-  .project {
-   text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .project img {
-    max-width: 300px;
-    width: 60%;
 
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin: 10px 20%;
 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
   
-  .project h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
   
   form {
     display: flex;
@@ -166,4 +153,30 @@
 }
  #detail {
   margin: 10px 20%;
+  line-height: 25px;
+  text-align: justify;
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 10px;
+
  }
+
+ .boton{
+  width: 400px;
+  text-align: center;
+
+ }
+
+ .video-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.video-container iframe {
+  width: 48%;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
