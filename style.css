@@ -67,14 +67,13 @@ nav a:hover {
 #portfolio{
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 5%;
 }
 
 
 .grids{
   display: flex;
   flex-direction: column;
-  margin: 5%;
 }
 
 h1{
