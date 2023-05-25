@@ -153,7 +153,6 @@ section a{
   .grids_elementos{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 30px
   }
   .grids_item{
     width: 80px;
