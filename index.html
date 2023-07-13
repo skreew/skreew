@@ -3,54 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+  <title>Skreew</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-    <body>
-      <header>
-        <nav>          
-          <ul>
-            <li><a href="#portfolio">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="banner">
-        <img src="imagens/perfil.png" alt="foto do designer" class="banner_img">
-        <img src="imagens/text.png" alt="texto skreew" class="banner_text">
-      </div>
-      <h1>Portafolio</h1>
-    <main id="portfolio">
-      <section class="grids">
-          <div class="grids_elementos"><img src="grids/section/midle.png" class="top_img"></div>
-          <div class="grids_elementos">
-          <a href="https://www.youtube.com/watch?v=2mdAaxTtXpg" target="_blank"><img src="grids/section/01.png" class="grids_item"></a>
-          <a href="https://www.youtube.com/shorts/1y2gM_NZQDY" target="_blank"><img src="grids/section/02.png" class="grids_item"></a>
-          <a href="https://www.youtube.com/shorts/VCKObPKvY48" target="_blank"><img src="grids/section/03.png" class="grids_item"></a>
+<body>
+  <header class="container">
+    <nav class="menu">
+      <div><a href="#pag1">Sobre mim</a></div>
+      <div><a href="#pag2">Trabalhos</a></div>
+    </nav>
+  </header>
+  <main>
+    <section id="pag1">
+      <article class="container">
+        <div class="pag1-right">
+          <div class="texto-h2">
+            <div class="circle"></div>
+            <h2 class="texto">Skreew</h2>
           </div>
-          <div class="grids_elementos">
-          <a href="https://www.youtube.com/watch?v=2mdAaxTtXpg" target="_blank"><img src="grids/section/01.png" class="grids_item"></a>
-          <a href="https://www.youtube.com/shorts/1y2gM_NZQDY" target="_blank"><img src="grids/section/02.png" class="grids_item"></a>
-          <a href="https://www.youtube.com/shorts/VCKObPKvY48" target="_blank"><img src="grids/section/03.png" class="grids_item"></a>
-          </div>
-      </section>
-      <aside>
-        <img src="grids/aside.png" class="palms">
-    </aside>
-    </main>
-
-    <section class="container_contatos" id="contact">     
-      <h1>Contato</h1>
-      <a href="https://api.whatsapp.com/send?phone=5511981064061&text=Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20servi%C3%A7os" target="_blank"><button class="contato"> <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="logo whatsapp">Enviar Mensagem</button></a> <a href="tel:+5511981064061" class="telefone">+55 11 98106-4061</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis enim id justo porttitor, sit amet interdum lectus condimentum.
+          </p>
+          <a href="https://wa.me/5511981064061" target="_blank"><button class="botao">Entre em Contato</button></a>
+        </div>
+        <div class="pag1-left">
+          <img src="imagens/logo.png" alt="logomarca">
+          <div id="calendario"></div>
+        </div>
+        <video src="imagens/bg1.mp4" autoplay muted loop class="bg1"></video>
+      </article>
     </section>
-    <div class="banner">
-      <img src="imagens/perfil.png" alt="foto do designer" class="banner_img">
-      <img src="imagens/text.png" alt="texto skreew" class="banner_text">
+    <section id="pag2">
+      <article class="container audiovisual">
+        <div class="texto-h2">
+          <div class="circle"></div>
+          <h2 class="texto">Trabalhos</h2>
+        </div>
+        <div class="widget-trabalho" id="audiovisual-widget">
+          <div class="widget-trabalho--top">
+            <div class="widget-trabalho--left">
+              <video src="imagens/audiovisual--thumb.mp4" autoplay loop muted></video>
+              <p>
+                Criação de Conteudo AudioVisual
+              </p>
+            </div>
+            <div class="widget-trabalho--video">
+              <video src="imagens/audiovisual.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="widget-trabalho--bottom" onclick="closeWidget('audiovisual-widget')">Sair</div>
+        </div>
+        <div class="widget-trabalho" id="socialmedia-widget">
+          <div class="widget-trabalho--top">
+            <div class="widget-trabalho--left">
+              <video src="imagens/socialmedia--thumb.mp4" autoplay loop muted></video>
+              <p>
+                Criação de Storys, Posts e Conteudo para Redes Sociais
+              </p>
+            </div>
+            <div class="widget-trabalho--video">
+              <video src="imagens/socialmedia.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="widget-trabalho--bottom" onclick="closeWidget('socialmedia-widget')">Sair</div>
+        </div>
+        <div class="widget-trabalho" id="experiencia-widget">
+          <div class="widget-trabalho--top">
+            <div class="widget-trabalho--left">
+              <video src="imagens/experiencia--thumb.mp4" autoplay loop muted></video>
+              <p>
+                Experiencia de x anos em Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="widget-trabalho--video">
+              <video src="imagens/experiencia.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="widget-trabalho--bottom" onclick="closeWidget('experiencia-widget')">Sair</div>
+        </div>
+        <div class="pag2-trabalhos">
+          <div class="pag2-trabalhos--item" onmouseover="playVideo('audiovisual--video')" onmouseout="pauseVideo('audiovisual--video')" onclick="openWidget('audiovisual-widget')" >
+            <video src="imagens/audiovisual--thumb.mp4" loop muted class="pag2-trabalhos--thumb" id="audiovisual--video"></video>
+            <h3>Audiovisual</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="pag2-trabalhos--item" onmouseover="playVideo('socialmedia--video')" onmouseout="pauseVideo('socialmedia--video')" onclick="openWidget('socialmedia-widget')" >
+            <video src="imagens/socialmedia--thumb.mp4" loop muted class="pag2-trabalhos--thumb" id="socialmedia--video"></video>
+            <h3>Social Media</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="pag2-trabalhos--item" onmouseover="playVideo('experiencia--video')" onmouseout="pauseVideo('experiencia--video')" onclick="openWidget('experiencia-widget')">
+            <video src="imagens/experiencia--thumb.mp4" loop muted class="pag2-trabalhos--thumb" id="experiencia--video"></video>
+            <h3>Experiencia</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="container">
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/gb_alcruz/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" class="footer-icon"></a>
+      <a href="https://api.whatsapp.com/send/?phone=5511981064061&text&type=phone_number&app_absent=0" target="_blank"><img src="https://www.clinicabichomania.com.br/wp-content/uploads/2016/11/WhatsApp-icon.png" class="footer-icon"></a>
     </div>
-    </body>
-    </html>
-    
+    <div class="footer-atalhos">
+      <div><a href="#pag1">Sobre mim</a></div>
+      <div><a href="#pag2">Trabalhos</a></div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2023 Skreew</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
